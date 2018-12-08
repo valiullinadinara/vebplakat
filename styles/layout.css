@@ -1,4 +1,25 @@
 body{
-  height: 850px;
+  height: 700px;
+  weight: 320px;
   background: linear-gradient(to bottom, #02000c , #28101f, #672c2d, #954539, #c45d42, #ea6f49, #ffe16c);
+}
+.text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #ffe16c;
+  text-align: center;
+  margin-top: 150px;
+}
+.img{
+  margin-top: -85px;
+}
+.link{
+  font-family:'Didact Gothic', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+a{
+  text-decoration: none;
 }
