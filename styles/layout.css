@@ -2,13 +2,23 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.img1, .img2, .imgline, .img3, .img4{
+  display: none;
+}
 .layer{
   overflow: scroll;
 }
 body{
-  height: 850px;
+  height: 1790px;
   weight: 320px;
+}
+.gradient{
   background: linear-gradient(to bottom, #02000c , #28101f, #28101f,#672c2d, #ea6f49, #ffe16c);
+  height: 600px;
+}
+.information{
+  background: #28101f;
+  height: 1190px;
 }
 header ul{
   position: fixed;
@@ -43,9 +53,21 @@ header ul li a{
   color: #ffe16c;
   text-align: center;
 }
-.kabina{
-  width: 60%;
+.maintext{
   display: block;
+  padding-top: 60px;
+}
+.kabina{
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-top: 80px;
+}
+.gorod{
+  padding-top:70px;
+}
+.lines{
+  weight: 10px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -56,62 +78,80 @@ header ul li a{
   color: #ffe16c;
   margin-left: 25px;
   margin-right: 25px;
-  border-top: 1px solid #ffe16c;
-  padding-top: 6px;
-  border-bottom: 1px solid #ffe16c;
-  padding-bottom: 6px;
-  font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
-.presentation{
-  text-transform: uppercase;
-  font-size: 36px;
-  font-family: 'Play', sans-serif;
-  color:  #28101f;
-  font-weight: bold;
-  margin-left: 23px;
-  margin-right: 23px;
-  margin-bottom: 15px;
+.description h1{
+  font-family: 'NK117', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  color: #ffe16c;
+  padding:30px 4px;
 }
+
 .date{
+  display: flex;
+  flex-direction: column;
   text-transform: uppercase;
-  font-size: 50px;
-  font-family: 'Play', sans-serif;
-  color:  #28101f;
+  font-size: 110px;
+  font-family: 'DIN Alternate', sans-serif;
+  color:  #ffe16c;
   font-weight: bold;
-  margin-left: 23px;
-  margin-right: 23px;
+  text-align: center;
+  margin-bottom: 40px;
 }
-section{
-  display: block;
-  padding-top: 60px;
+.ticket h2{
+  font-size: 21px;
+  font-family: 'DIN Alternate', sans-serif;
+  color:  #ffe16c;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ticket p > a{
+  font-size: 26px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-weight: bold;
+  color: #28101f;
+  padding: 1px 10px;
+  background-color: #ffe16c;
+  text-align: center;
+  margin: 0 130px;
+}
+.notice{
+  font-size: 10px;
+  font-family: 'DIN Alternate', sans-serif;
+  color: #A0926B;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .link {
   font-family: 'Ubuntu Condensed', sans-serif;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-bottom: 25px;
 }
 .link li:first-of-type{
   display: inline-block;
   padding: 7px 40px;
-  background-color: #28101f;
+  background-color: #ffe16c;
   margin-bottom: 3px;
   box-sizing: border-box;
+
 }
 .link li:first-of-type a{
-  color: #ffe16c;
+  color: #28101f;
 }
 .link li:last-child{
 display: inline-block;
-border: 3px solid #28101f;
-padding: 4px 30px;
+border: 3px solid #ffe16c;
+padding: 4px 31px;
 box-sizing: border-box;
 }
 .link li:last-child a{
-  color: #28101f;
+  color: #ffe16c;
 }
 a{
   color:#ffe16c;
@@ -122,6 +162,9 @@ a:active{
 }
 a:visited{
     color: #ffe16c;
+}
+.gorod2{
+  padding-top: 13px;
 }
 footer{
   display: flex;
@@ -141,28 +184,88 @@ footer img{
   }
   body{
     weight: 768px;
-    height: 1290px;
+    height: 1850px;
   }
   header ul{
     height: 60px;
     font-size: 20px;
   }
   .losung{
-    padding: 80px;
-    font-size: 126px;
+    padding: 50px;
+    font-size: 100px;
   }
   .text{
-    font-size: 49px;
+    font-size: 39px;
   }
-  .description{
-    font-size: 20px;
-    line-height: 22px;
+
+  .description h1{
+    padding-top: 30px;
+    padding-left: 400px;
   }
-  .presentation{
-    font-size: 60px;
+  .description p{
+    padding-left: 425px;
+    padding-right: 25px;
+    font-size: 23px;
+    line-height: 25px;
+  }
+  .imgline{
+    display: flex;
+    margin-top: -480px;
+    padding-left: 50px;
+  }
+  .lines{
+    display: none;
+  }
+  .kabina{
+    display: block;
+    width: 30%;
+    padding-top: 0;
+  }
+  .gorod{
+    display: flex;
+    flex-direction:row;
+    padding-top:0px;
+    margin-top: -60px;
+    width: 40%;
+  }
+  .img1{
+    display: flex;
+    width: 70%;
+  }
+  .img2{
+    display: flex;
+    width: 80%;
   }
   .date{
-    font-size: 80px;
+    font-size: 100px;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  .ticket h2{
+    padding-top: 15px;
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .ticket p > a{
+    font-size: 30px;
+    padding: 1px 10px;
+    margin: 0 360px;
+  }
+  .notice{
+    font-size: 15px;
+  }
+  .gorod2{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .img3, .img4{
+    display: flex;
+    width: 94%;
   }
   .link{
     font-size: 30px;
@@ -179,94 +282,231 @@ footer img{
 
 }
 @media (min-width: 1024px){
+  .layer{
+    overflow: scroll;
+  }
   body{
-    height: 1200px;
+    weight: 768px;
+    height: 1500px;
+  }
+  header ul{
+    height: 60px;
+    font-size: 20px;
   }
   .losung{
-    padding-top: 40px;
-    font-size: 155px;
-    margin-bottom: 10px;
-  }
-  .text{
-    font-size: 60px;
-  }
-  .kabina{
-    width: 55%;
-  }
-  .presentation{
-    font-size: 80px;
-  }
-  .date{
+    padding: 50px;
     font-size: 100px;
   }
-  .description{
+  .text{
+    font-size: 39px;
+  }
+
+  .description h1{
+    padding-top: 50px;
+    padding-left: 400px;
+    font-size: 150px;
+  }
+  .description p{
+    padding-left: 425px;
+    padding-right: 25px;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 35px;
+  }
+  .imgline{
+    display: flex;
+    margin-top: -510px;
+    padding-left: 100px;
+  }
+  .lines{
+    display: none;
+  }
+  .kabina{
+    display: block;
+    width: 20%;
+    padding-top: 0;
+  }
+  .gorod{
+    display: flex;
+    flex-direction:row;
+    padding-top:0px;
+    margin-top: -44px;
+    width: 100%;
+  }
+  .img1{
+    display: flex;
+    width: 100%;
+  }
+  .img2{
+    display: flex;
+    width: 100%;
+  }
+  .ticket{
+    margin-left:570px;
+    margin-top: -260px;
+    margin-bottom: 250px;
+    margin-right: 50px;
+    padding-bottom: 10px;
+  }
+  .ticket h2{
+    padding-top: 15px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  .ticket p > a{
+    font-size: 30px;
+    padding: 1px 10px;
+    margin: 0 330px;
+  }
+
+  .notice{
+    font-size: 10px;
+    text-align: right;
+    margin-top: -7px;
+    margin-right: 100px;
+  }
+  .gorod2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .img3, .img4{
+    display: flex;
+    width: 90%;
+    padding-top: 70px;
+  }
+  .link{
+    font-size: 30px;
+    margin-top: -150PX;
   }
   .link li:first-of-type{
-    padding: 20px 90px;
-    margin-top: 35px;
+    padding: 10px 70px;
   }
   .link li:last-child{
-    padding: 17px 90px;
-    margin-bottom: 10px;
+    padding: 7px 70px;
   }
-  footer{
+  footer img{
+    width: 5%;
+  }
+  .date{
+    font-size: 110px;
+    flex-direction: column;
+    margin-right: 580px;
     margin-top: 60px;
-    height: 90px;
-  }
 }
 @media(min-width: 1440px){
-body{
-  height: 2600px;
-}
-header ul{
-  height: 100px;
-  font-size: 35px;
-}
+  .layer{
+    overflow: scroll;
+  }
+  body{
+    weight: 768px;
+    height: 1710px;
+  }
+  header ul{
+    height: 60px;
+    font-size: 20px;
+  }
+  .losung{
+    padding: 40px;
+    font-size: 100px;
+  }
+  .text{
+    font-size: 39px;
+  }
 
-.losung{
-  margin-top: 150px;
-  font-size: 215px;
-  margin-bottom: 40px;
-}
-.text{
-  font-size: 83px;
-  margin-bottom: 150px;
-}
-.kabina{
-  width: 75%;
-  margin-bottom: 100px;
-}
-.description{
-  font-size: 40px;
-  line-height: 45px;
-  padding-top: 30px;
-  padding-bottom: 30px
-}
-.presentation{
-  margin-top: 80px;
-  font-size: 120px;
-}
-.date{
-  font-size: 140px;
-}
-.link{
-  font-size: 50px;
-  margin-top: 50px;
-}
-.link li:first-of-type{
-  padding: 20px 90px;
-}
-.link li:last-child{
-  padding: 17px 90px;
-  margin-bottom: 10px;
-}
-footer{
-  margin-top: 80px;
-  height: 110px;
-}
+  .description h1{
+    padding-top: 50px;
+    padding-left: 400px;
+    font-size: 150px;
+  }
+  .description p{
+    margin-left: 225px;
+    padding-right: 25px;
+    font-size: 30px;
+    line-height: 35px;
+    padding-right: 250px;
+  }
+  .imgline{
+    display: flex;
+    margin-top: -550px;
+    padding-left: 300px;
+    height: 530px;
+  }
+  .lines{
+    display: none;
+  }
+  .kabina{
+    display: block;
+    width: 15%;
+  }
+  .gorod{
+    display: flex;
+    flex-direction:row;
+    padding-top:0px;
+    margin-top: -36px;
+    width: 100%;
+  }
+  .img1{
+    display: flex;
+    width: 100%;
+  }
+  .img2{
+    display: flex;
+    width: 100%;
+  }
+  .ticket{
+    margin-left:570px;
+    margin-top: -260px;
+    margin-bottom: 250px;
+    margin-right: 280px;
+    padding-bottom: 10px;
+  }
+  .ticket h2{
+    padding-top: 15px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: right;
+  }
+  .ticket p > a{
+    font-size: 30px;
+    padding: 1px 10px;
+    margin: 0 515px;
+  }
 
-
-
-}
+  .notice{
+    font-size: 10px;
+    text-align: right;
+    margin-top: -7px;
+    margin-right: 100px;
+  }
+  .gorod2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+  }
+  .img3, .img4{
+    display: flex;
+    width: 90%;
+    padding-top: 30px;
+  }
+  .link{
+    font-size: 30px;
+    margin-top: -170PX;
+  }
+  .link li:first-of-type{
+    padding: 10px 70px;
+  }
+  .link li:last-child{
+    padding: 7px 70px;
+  }
+  footer img{
+    width: 4%;
+  }
+  .date{
+    font-size: 110px;
+    flex-direction: column;
+    margin-right: 580px;
+    margin-top: 60px;
+  }
